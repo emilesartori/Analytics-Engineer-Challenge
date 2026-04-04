@@ -1,9 +1,9 @@
-Loadsmart Data Challenge - Analytics Engineering
+## Loadsmart Data Challenge - Analytics Engineering
 
 This repository contains the end-to-end solution for the Loadsmart Data Challenge. The goal of this project is to transform raw logistics data into a structured Star Schema to support business decisions regarding profitability (PnL), carrier performance, and lane optimization.
 Architecture & Tech Stack
 
-The project was designed following the Medallion Architecture (Bronze, Silver, Gold) principles:
+#The project was designed following the Medallion Architecture (Bronze, Silver, Gold) principles:
 
     Ingestion (Bronze): Python script (Google Colab/Local) using Pandas for data auditing and DuckDB for fast OLAP storage.
 
@@ -13,9 +13,9 @@ The project was designed following the Medallion Architecture (Bronze, Silver, G
 
     Quality Assurance: dbt-tests to ensure data integrity (uniqueness, non-null values, and referential integrity).
 
-Data Modeling (Star Schema)
+#Data Modeling (Star Schema)
 
-To ensure high performance in Power BI, I implemented a dimensional model:
+To ensure high performance in Power BI:
 
     fct_loads: The central table containing financial metrics (book_price, source_price, pnl) and operational flags (on_time_delivery).
 
@@ -53,6 +53,3 @@ dbt test
 
 Used decimal types for prices.
 
-    Data Auditing: Implemented a pre-ingestion check to identify PnL discrepancies.
-
-    Performance: All joins are based on MD5 hashes (Surrogate Keys) for faster indexing and clean BI relationships.
