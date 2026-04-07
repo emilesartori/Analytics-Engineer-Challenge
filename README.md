@@ -66,7 +66,7 @@ To measure the success of Loadsmart's operation, the following measures were dev
 
 ---
 ## Analytical Note: Timeframe Scope
-Please note that the **Power BI dashboard focuses exclusively on 2024 data**. Although the dataset includes entries for early 2025, the volume appeared incomplete for a full-year comparison. To maintain data integrity and provide a reliable baseline for seasonality and performance KPIs, the 2025 records were excluded from the primary visuals.
+Please note that the **Power BI dashboard focuses exclusively on 2024 and non canceled data**. Although the dataset includes entries for early 2025, the volume appeared incomplete for a full-year comparison. To maintain data integrity and provide a reliable baseline for seasonality and performance KPIs, the 2025 records were excluded from the primary visuals.
 
 
 ## Repository Structure
